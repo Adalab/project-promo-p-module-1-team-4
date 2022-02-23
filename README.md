@@ -1,1 +1,1 @@
-# proyect-promo-p-module-1-team-4
+# project-promo-p-module-1-team-4

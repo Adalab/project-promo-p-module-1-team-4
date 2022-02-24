@@ -9,3 +9,23 @@
   font-family: "Open Sans", sans-serif;
   font-family: "Rubik", sans-serif;
 }
+
+.article_2 {
+  background-color: var(--cool-grey);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+.article_2_h2 {
+  color: var(--aqua);
+}
+.article_2_p {
+  color: var(--color-letters);
+}
+.rectangle-4 {
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}

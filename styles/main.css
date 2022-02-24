@@ -1,0 +1,11 @@
+:root {
+  /* Colores de letras  */
+  --blue-green: #099d8d;
+  --aqua: #14d9c4;
+  --black: #000000;
+  --color-letters: #54585a;
+  --cool-grey: #b8b8b9;
+  /* Familia fuente */
+  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+}

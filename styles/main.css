@@ -28,4 +28,7 @@
   height: 30px;
   transform: rotate(45deg);
   background-color: #fff;
+  position: relative;
+  left: 50%;
+  bottom: 14px;
 }

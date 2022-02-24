@@ -38,3 +38,86 @@
   width: 320px;
   height: 421px;
 }
+.box_we_are {
+  width: 320px;
+  height: 4025px;
+  background-color: #fff;
+}
+
+.title_who_we_are {
+  width: 193px;
+  height: 45px;
+  margin: 0 47.5px 30px 49.5px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-green);
+}
+
+.rectangle_5 {
+  width: 180px;
+  height: 180px;
+  margin: 0 55px 15px;
+  border-radius: 4px;
+  border: solid 5px var(--black-8);
+}
+
+.name_student {
+  width: 147px;
+  height: 45px;
+  margin: 15px 70.5px 0 72.5px;
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+}
+
+.description_student {
+  width: 290px;
+  height: 200px;
+  margin: 60px 0 15px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+
+.box_logos {
+  width: 124px;
+  height: 30px;
+  margin: 15px 83px 0;
+  font-family: FontAwesome5Brands;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  list-style: none;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-green);
+}
+
+.box_logos#logo_twt {
+  font-family: OpenSans;
+  color: #54585a;
+}
+
+.box_logos#logo_email {
+  font-family: FontAwesome5ProSolid;
+}

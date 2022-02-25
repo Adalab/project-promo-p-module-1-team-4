@@ -5,13 +5,14 @@
   --black: #000000;
   --color-letters: #54585a;
   --cool-grey: #f1f1f1;
+  --o-border-image: #000000;
 
   /* Familia fuente */
   font-family: "Open Sans", sans-serif;
   font-family: "Rubik", sans-serif;
 }
-
-.article_2 {
+/* Color borde de imagenes */
+--border-imag .article_2 {
   background-color: var(--cool-grey);
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@
 .title_who_we_are {
   width: 193px;
   height: 45px;
-  margin: 0 47.5px 30px 49.5px;
+  margin: 50px 47.5px 5px 49.5px;
   font-family: Rubik;
   font-size: 24px;
   font-weight: 500;
@@ -59,18 +60,18 @@
   color: var(--blue-green);
 }
 
-.rectangle_5 {
+.photo_student {
   width: 180px;
   height: 180px;
-  margin: 0 55px 15px;
+  margin: 30px 55px;
   border-radius: 4px;
-  border: solid 5px var(--black-8);
+  border: solid 5px var(--o-border-imag);
 }
 
 .name_student {
   width: 147px;
-  height: 45px;
-  margin: 15px 70.5px 0 72.5px;
+  height: 30px;
+  margin: 0 72.5px 0 72.5px;
   font-family: OpenSans;
   font-size: 20px;
   font-weight: normal;
@@ -84,8 +85,8 @@
 
 .description_student {
   width: 290px;
-  height: 200px;
-  margin: 60px 0 15px;
+  height: 160px;
+  margin: 20px 0 2px;
   font-family: OpenSans;
   font-size: 16px;
   font-weight: normal;
@@ -113,11 +114,11 @@
   color: var(--blue-green);
 }
 
-.box_logos#logo_twt {
+.box_logos#fa-brands fa-twitter {
   font-family: OpenSans;
   color: #54585a;
 }
 
-.box_logos#logo_email {
+.box_logos#fa-solid fa-envelope {
   font-family: FontAwesome5ProSolid;
 }

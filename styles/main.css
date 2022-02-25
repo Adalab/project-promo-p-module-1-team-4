@@ -12,7 +12,7 @@
   font-family: "Rubik", sans-serif;
 }
 /* Color borde de imagenes */
---border-imag .article_2 {
+.article_2 {
   background-color: var(--cool-grey);
   display: flex;
   flex-direction: column;

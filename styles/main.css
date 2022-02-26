@@ -1,123 +1,134 @@
 :root {
-  /* Colores de letras  */
-  --blue-green: #099d8d;
-  --aqua: #14d9c4;
-  --black: #000000;
-  --color-letters: #54585a;
-  --cool-grey: #f1f1f1;
-  --o-border-image: #000000;
-  /* Familia fuente */
-  font-family: "Open Sans", sans-serif;
-  font-family: "Rubik", sans-serif;
+	/* Colores de letras  */
+	--blue-green: #099d8d;
+	--aqua: #14d9c4;
+	--black: #000000;
+	--color-letters: #54585a;
+	--cool-grey: #f1f1f1;
+	--o-border-image: #000000;
+	/* Familia fuente */
+	font-family: "Open Sans", sans-serif;
+	font-family: "Rubik", sans-serif;
 }
+
+/* Header styles */
+
+.header_base {
+	width: 320px;
+	height: 60px;
+	padding: 15px 80px;
+	opacity: 0.95;
+	background-color: var(--blue-green);
+}
+
 /* Color borde de imagenes */
 .article_2 {
-  background-color: var(--cool-grey);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: "Rubik", sans-serif;
+	background-color: var(--cool-grey);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Rubik", sans-serif;
 }
 .article_2_h2 {
-  color: var(--aqua);
+	color: var(--aqua);
 }
 .article_2_p {
-  color: var(--color-letters);
+	color: var(--color-letters);
 }
 .rectangle-4 {
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  background-color: #fff;
-  position: relative;
-  left: 50%;
-  bottom: 14px;
+	width: 30px;
+	height: 30px;
+	transform: rotate(45deg);
+	background-color: #fff;
+	position: relative;
+	left: 50%;
+	bottom: 14px;
 }
 
 .image {
-  width: 320px;
-  height: 421px;
+	width: 320px;
+	height: 421px;
 }
 .box_we_are {
-  width: 320px;
-  height: 2625px;
-  background-color: #fff;
+	width: 320px;
+	height: 2625px;
+	background-color: #fff;
 }
 
 .title_who_we_are {
-  width: 193px;
-  height: 45px;
-  margin: 50px 47.5px 5px 49.5px;
-  font-family: Rubik;
-  font-size: 24px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--blue-green);
+	width: 193px;
+	height: 45px;
+	margin: 50px 47.5px 5px 49.5px;
+	font-family: Rubik;
+	font-size: 24px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.88;
+	letter-spacing: normal;
+	text-align: center;
+	color: var(--blue-green);
 }
 
 .photo_student {
-  width: 180px;
-  height: 180px;
-  margin: 30px 55px;
-  border-radius: 4px;
-  border: solid 5px var(--o-border-imag);
+	width: 180px;
+	height: 180px;
+	margin: 30px 55px;
+	border-radius: 4px;
+	border: solid 5px var(--o-border-imag);
 }
 
 .name_student {
-  width: 147px;
-  height: 30px;
-  margin: 0 72.5px 0 72.5px;
-  font-family: OpenSans;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--black);
+	width: 147px;
+	height: 30px;
+	margin: 0 72.5px 0 72.5px;
+	font-family: OpenSans;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.25;
+	letter-spacing: normal;
+	text-align: center;
+	color: var(--black);
 }
 
 .description_student {
-  width: 290px;
-  height: 160px;
-  margin: 20px 0 2px;
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #54585a;
+	width: 290px;
+	height: 160px;
+	margin: 20px 0 2px;
+	font-family: OpenSans;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #54585a;
 }
 
 .box_logos {
-  width: 124px;
-  height: 30px;
-  margin: 15px 83px 0;
-  font-family: FontAwesome5Brands;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  list-style: none;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--blue-green);
+	width: 124px;
+	height: 30px;
+	margin: 15px 83px 0;
+	font-family: FontAwesome5Brands;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	list-style: none;
+	line-height: 1.88;
+	letter-spacing: normal;
+	text-align: center;
+	color: var(--blue-green);
 }
 
 .box_logos#fa-brands fa-twitter {
-  font-family: OpenSans;
-  color: #54585a;
+	font-family: OpenSans;
+	color: #54585a;
 }
 
 .box_logos#fa-solid fa-envelope {
-  font-family: FontAwesome5ProSolid;
+	font-family: FontAwesome5ProSolid;
 }

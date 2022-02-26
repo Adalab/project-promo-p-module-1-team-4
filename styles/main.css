@@ -266,3 +266,70 @@ body {
   height: 45px;
   position: center;
 }
+
+/* GROUP PICTURE */
+.image {
+  width: 100%;
+}
+/* TEAM */
+.box_team,
+.slogan {
+  text-align: center;
+  background-color: #fff;
+}
+.content_2 {
+  height: 80px;
+}
+
+.slogan {
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+  transform: translateY(-50%);
+  margin: 0 15px;
+
+  border: solid 2px red;
+  /* font */
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.box_team {
+  margin-bottom: 30px;
+}
+.title_team {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--aqua);
+}
+
+.text_team {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--color-letters);
+}
+
+.content_1 {
+  border: solid 1px black;
+  padding-right: 4.6875%;
+  padding-left: 4.6875%;
+  position: relative;
+}

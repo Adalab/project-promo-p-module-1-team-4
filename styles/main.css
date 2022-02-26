@@ -8,6 +8,11 @@
   --o-border-image: #000000;
 }
 
+/* TODO: Definir la fuente principal de la web
+body {
+  font-family: "Open Sans", sans-serif;
+} */
+
 /* Header styles */
 
 .header_container {

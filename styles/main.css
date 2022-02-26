@@ -75,29 +75,37 @@ body {
 }
 
 /* Color borde de imagenes */
-.article_2 {
+.strenghths_weaknesses {
+  /* TODO: Eliminarlo cuando se defina en el body  */
+  font-family: "Open Sans", sans-serif;
   background-color: var(--cool-grey);
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  padding: 30px 15px 45px 15px;
+  margin-top: 30px;
 }
-.article_2_h2 {
-  color: var(--aqua);
+.strenghths_weaknesses_title {
+  color: var(--blue-green);
+  font-size: 1.375em;
+  font-weight: 600;
+  line-height: 2.813em;
 }
-.article_2_p {
+.strenghths_weaknesses_content {
   color: var(--color-letters);
+  font-size: 1em;
+  line-height: 1.5em;
 }
-.rectangle-4 {
+.rhombus {
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
   background-color: #fff;
-  position: relative;
-  left: 50%;
-  bottom: 14px;
+  margin: -45px auto 0 auto;
 }
-
+.strenghths_weaknesses_article:nth-of-type(n + 2) {
+  margin-top: 30px;
+}
 .image {
   width: 320px;
   height: 421px;

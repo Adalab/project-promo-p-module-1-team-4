@@ -78,7 +78,7 @@ body {
 .strenghths_weaknesses {
   /* TODO: Eliminarlo cuando se defina en el body  */
   font-family: "Open Sans", sans-serif;
-  background-color: var(--cool-grey);
+  background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
   text-align: center;

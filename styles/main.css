@@ -4,7 +4,7 @@
   --aqua: #14d9c4;
   --black: #000000;
   --color-letters: #54585a;
-  --cool-grey: #f1f1f1;
+  --cool-grey: #b8b8b9;
   --o-border-image: #000000;
   /* Familia fuente */
   font-family: "Open Sans", sans-serif;
@@ -182,4 +182,77 @@
 
 .box_logos#fa-solid fa-envelope {
   font-family: FontAwesome5ProSolid;
+}
+
+/* Footer styles */
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 320px;
+  height: 250px;
+  padding: 30px 74px 45px;
+  border: solid 1px var(--cool-grey);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.footer_name_group {
+  width: 172px;
+  height: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--cool-grey);
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  opacity: 0.75;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--color-letters);
+}
+
+.footer_menu_links {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer_link {
+  font-family: "Open Sans";
+  color: var(--color-letters);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  align-items: center;
+}
+
+.footer_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_logo_adalab {
+  width: 115.9px;
+  height: 45px;
+  position: center;
 }

@@ -82,7 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* gap: 15px; */
+  gap: 15px;
   padding: 30px 15px 45px 15px;
   margin-top: 30px;
   position: relative;
@@ -93,10 +93,10 @@ body {
   height: 30px;
   transform: rotate(45deg);
   background-color: #fff;
-  /* margin: -45px auto 0 auto; */
   position: absolute;
   left: 50%;
   top: -15px;
+  margin-left: -15px;
 }
 .strenghths_weaknesses_title {
   color: var(--blue-green);
@@ -109,9 +109,10 @@ body {
   font-size: 1em;
   line-height: 1.5em;
 }
-
-.strenghths_weaknesses_article:nth-of-type(n + 2) {
-  margin-top: 30px;
+@media (min-width: 480px) {
+  .strenghths_weaknesses {
+    flex-direction: row;
+  }
 }
 .image {
   width: 320px;

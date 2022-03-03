@@ -1,4 +1,4 @@
-@import "core/variables";
+@import 'core/variables';
 /* @import 'core/reset';
 @import 'components/code';
 @import 'components/links';
@@ -6,7 +6,7 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index'; */
-@import "core/reset";
+@import 'core/reset';
 
 :root {
   /* Colores de letras  */
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /*   scroll-behavior: smooth;
   scroll-margin-top: -10px; */
 }
@@ -32,7 +32,7 @@ body {
   width: 100%;
   top: 0;
   position: fixed;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #fff;
   font-weight: 500;
   z-index: 1;
@@ -68,7 +68,7 @@ body {
   width: 100%;
   text-align: center;
   text-decoration: none;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 15px;
   color: #fff;
 }
@@ -128,7 +128,7 @@ body {
 }
 .title_team {
   padding-top: 30px;
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-size: 24px;
   font-weight: 500;
   line-height: 1.88;
@@ -166,7 +166,7 @@ body {
 }
 
 .strenghths_weaknesses::before {
-  content: " ";
+  content: ' ';
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
@@ -198,7 +198,7 @@ body {
 
 .title_who_we_are {
   margin-top: 30px;
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-size: 24px;
   text-align: center;
   color: var(--blue-green);

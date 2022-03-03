@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
 .wrapper {
@@ -21,7 +21,7 @@ body {
   width: 100%;
   top: 0;
   position: sticky;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #fff;
   font-weight: 500;
   z-index: 1;
@@ -57,7 +57,7 @@ body {
   width: 100%;
   text-align: center;
   text-decoration: none;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 15px;
   color: #fff;
 }
@@ -93,7 +93,7 @@ body {
   margin-bottom: 30px;
 }
 .title_team {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -134,7 +134,7 @@ body {
 }
 
 .strenghths_weaknesses::before {
-  content: " ";
+  content: ' ';
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
@@ -170,7 +170,7 @@ body {
 
 .title_who_we_are {
   margin-top: 30px;
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-size: 24px;
   text-align: center;
   color: var(--blue-green);

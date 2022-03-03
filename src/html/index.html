@@ -22,303 +22,98 @@
   </head>
 
   <body>
-    <header class="header_container">
-      <div class="header_base_container wrapper">
-        <h1 class="header_base_title">MIUDIÑAS</h1>
-      </div>
-      <div class="header_menu_container wrapper">
-        <nav>
-          <ul class="header_menu_list">
-            <li class="h_menu_list_item">
-              <a class="h_menu_link" href="./index.html#equipo">EQUIPO</a>
-            </li>
-            <li class="h_menu_list_item">
-              <a class="h_menu_link" href="./index.html#somos">QUIENES SOMOS</a>
-            </li>
-            <li class="h_menu_list_item">
-              <a class="h_menu_link" href="./index.html#contacto">CONTACTO</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+   <include src="./partials/header.html"></include>
     <main>
-      <section>
-        <!------------ IMAGE ------------>
-        <img
-          class="image"
-          src="./assets/images/img-grupo.jpg"
-          alt="grupo de personas disfrazadas con cabezas gigantes"
-        />
-        <div class="wrapper">
-          <p class="slogan">NUNCA DEIXEMOS DE APRENDER</p>
-        </div>
-      </section>
+      <include src="./partials/main_image.html"></include>
       <!-------------  TEAM --------------->
       <section id="equipo">
-        <article class="box_team">
-          <div class="wrapper">
-            <h2 class="title_team">EQUIPO</h2>
-            <p class="text_team">
-              Repartidas entre el norte y el centro de la Península, las
-              Miudiñas compartimos el espíritu gallego, de ahí nuestro nombre.
-              Somos emprendedoras, valientes y suficientemente cabezotas como
-              para pelearnos con las propiedades de un elemento hasta que este
-              actúe a nuestro antojo.
-            </p>
-            <p class="text_team">
-              Nuestro objetivo principal es adquirir las competencias necesarias
-              para convertirnos en programadoras profesionales, pero además
-              queremos disfrutar del camino. Por eso hemos creado un entorno de
-              trabajo en el que el respeto y el apoyo grupal es primordial.
-            </p>
-          </div>
-        </article>
+        <include src="./partials/main_team.html"></include>
         <!---- strenghths_weaknesses ---->
-        <article class="strenghths_weaknesses wrapper">
-          <article class="strenghths_weaknesses_article">
-            <h2 class="strenghths_weaknesses_title">Fortalezas</h2>
-            <p class="strenghths_weaknesses_content">
-              Si algo caracteriza al equipo de las Miudiñas es nuestra capacidad
-              de trabajo en equipo. Todas tenemos opiniones formadas, pero
-              sabemos escucharnos, razonar y ceder. Empatizamos con nuestras
-              compañeras y juntas tomamos decisiones.
-            </p>
-          </article>
-          <article class="strenghths_weaknesses_article">
-            <h2 class="strenghths_weaknesses_title">Debilidades</h2>
-
-            <p class="strenghths_weaknesses_content">
-              Nuestra debilidad es que a veces la autoexigencia agota nuestras
-              fuerzas. Nos cuesta dejar las cosas antes de ponerle un punto
-              final. Esto a veces hace que se nos olvide que fuera hace una
-              tarde maravillosa para dar un paseo.
-            </p>
-          </article>
-        </article>
+        <include src="./partials/main_strengths_w.html"></include>
       </section>
       <!------------who_we_are------------>
       <section class="box_we_are">
         <div class="wrapper">
           <h2 class="title_who_we_are" id="somos">QUIÉNES SOMOS</h2>
           <div>
-            <article class="student">
-              <img
-                class="photo_student"
-                src="./assets/images/IMG_0533.jpg"
-                alt="Foto de Gloria"
-              />
-              <h3 class="name_student">Gloria Rodríguez</h3>
-              <p class="description_student">
-                Gallega y canaria de sangre. con estudios de Administración y
-                Finanzas, encontrandome con mi nuevo yo como desarroladora web.
-                Embarcada con mis copañeras en la gran aventura del Bootcamp de
-                Adalab. Mi objetivo, nunca parar de aprender.
-              </p>
-              <div class="box_logos">
-                <a
-                  class="redes"
-                  href="https://twitter.com/gloriarodrife"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-twitter"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://www.linkedin.com/in/gloriarodrife/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-linkedin-in"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://github.com/gloriarodrife"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github-alt"></i
-                ></a>
-                ·
-                <a class="redes" href="#" target="_blank"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </div>
-            </article>
-            <article class="student">
-              <img
-                class="photo_student"
-                src="./assets/images/foto_sandra.jpeg"
-                alt="Foto de Sandra"
-              />
-              <h3 class="name_student">Sandra Rial</h3>
-              <p class="description_student">
-                Gallega de raíces y alma de trotamundo. Con estudios en Turismo
-                y Organización de eventos. Ahora me propongo poder vivir cerca
-                del mar y encontrar en este mundo de la programación un nueva
-                manera de disfrutar creando.
-              </p>
-              <div class="box_logos">
-                <a class="redes" href="#" target="_blank">
-                  <i class="fa-brands fa-twitter"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://www.linkedin.com/in/sandra-rial-p%C3%A9rez-a376711b7/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-linkedin-in"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://github.com/SandraRial"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github-alt"></i
-                ></a>
-                ·
-                <a class="redes" href="#" target="_blank"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </div>
-            </article>
-            <article class="student">
-              <img
-                class="photo_student"
-                src="./assets/images/img-prado.jpg"
-                alt="Foto de Prado"
-              />
-              <h3 class="name_student">Prado Carretero</h3>
-              <p class="description_student">
-                Paciente, con gran capacidad de adaptación y mamá de dos
-                chiquitines. Descubriendo el mundo diseño-web de pura casualidad
-                y con mucho entusiasmo y emoción,.. con ganas de gritarle al
-                mundo por las mañanas… ¡por fin encontré mi camino!
-              </p>
-              <div class="box_logos">
-                <a class="redes" href="#" target="_blank">
-                  <i class="fa-brands fa-twitter"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="www.linkedin.com/in/pradocarretero/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-linkedin-in"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://github.com/PradoCarretero"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github-alt"></i
-                ></a>
-                ·
-                <a class="redes" href="#" target="_blank"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </div>
-            </article>
-            <article class="student">
-              <img
-                class="photo_student"
-                src="./assets/images/alta web-11281.jpg"
-                alt="Foto de Andrea"
-              />
-              <h3 class="name_student">Andrea Alonso</h3>
-              <p class="description_student">
-                Graduada en Comunicación Audiovisual y con estudios de postgrado
-                en diferentes ámbitos creativos (diseño gráfico y fotografía,
-                entre otros), actualmente se embarca en un nuevo proyecto: el
-                dominio del desarrollo web de la mano de los profesionales de
-                Adalab.
-              </p>
-              <div class="box_logos">
-                <a class="redes" href="#" target="_blank">
-                  <i class="fa-brands fa-twitter"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://www.linkedin.com/in/andrea-alonso-2a21a9139/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-linkedin-in"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://github.com/andalons"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github-alt"></i
-                ></a>
-                ·
-                <a class="redes" href="#" target="_blank"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </div>
-            </article>
-            <article class="student">
-              <img
-                class="photo_student"
-                src="./assets/images/foto_alicia.jpg.png"
-                alt="Foto de Alicia"
-              />
-              <h3 class="name_student">Alicia González</h3>
-              <p class="description_student">
-                Salmantina de nacimiento y madrileña de adopción. Buscando un
-                nuevo proyecto de vida, he decidido cambiar la programación de
-                las obras por la programación web. Un salto que hago con ilusión
-                y muchas ganas de seguir desarrollándome.
-              </p>
-              <div class="box_logos">
-                <a class="redes" href="#" target="_blank">
-                  <i class="fa-brands fa-twitter"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://www.linkedin.com/in/alicia-gonz%C3%A1lez-san-juan/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-linkedin-in"></i> </a
-                >·
-                <a
-                  class="redes"
-                  href="https://github.com/Aliciagsj"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github-alt"></i
-                ></a>
-                ·
-                <a class="redes" href="#" target="_blank"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </div>
-            </article>
+            <include 
+            src="./partials/main_student.html" 
+            profile_image="./assets/images/IMG_0533.jpg"
+            name="Gloria Rodríguez" 
+            description="Gallega y canaria de sangre. con estudios de Administración y
+            Finanzas, encontrandome con mi nuevo yo como desarroladora web.
+            Embarcada con mis copañeras en la gran aventura del Bootcamp de
+            Adalab. Mi objetivo, nunca parar de aprender."
+            twitter="https://twitter.com/gloriarodrife"
+            linkedin="https://www.linkedin.com/in/gloriarodrife/"
+            github="https://github.com/gloriarodrife"
+            email="#"
+            ></include>
+
+            <include 
+            src="./partials/main_student.html" 
+            profile_image="./assets/images/foto_sandra.jpeg"
+            name="Sandra Rial" 
+            description=" Gallega de raíces y alma de trotamundo. Con estudios en Turismo
+            y Organización de eventos. Ahora me propongo poder vivir cerca
+            del mar y encontrar en este mundo de la programación un nueva
+            manera de disfrutar creando."
+            twitter="#"
+            linkedin="https://www.linkedin.com/in/sandra-rial-p%C3%A9rez-a376711b7/"
+            github="https://github.com/SandraRial"
+            email="#"
+            ></include>
+
+            <include 
+            src="./partials/main_student.html" 
+            profile_image="./assets/images/img-prado.jpg"
+            name="Prado Carretero" 
+            description=" Paciente, con gran capacidad de adaptación y mamá de dos
+            chiquitines. Descubriendo el mundo diseño-web de pura casualidad
+            y con mucho entusiasmo y emoción,.. con ganas de gritarle al
+            mundo por las mañanas… ¡por fin encontré mi camino!"
+            twitter="#"
+            linkedin="www.linkedin.com/in/pradocarretero/"
+            github="https://github.com/PradoCarretero"
+            email="#"
+            ></include>
+
+            <include 
+            src="./partials/main_student.html" 
+            profile_image="./assets/images/alta web-11281.jpg"
+            name="Andrea Alonso" 
+            description="Graduada en Comunicación Audiovisual y con estudios de postgrado
+            en diferentes ámbitos creativos (diseño gráfico y fotografía,
+            entre otros), actualmente se embarca en un nuevo proyecto: el
+            dominio del desarrollo web de la mano de los profesionales de
+            Adalab."
+            twitter="#"
+            linkedin="https://www.linkedin.com/in/andrea-alonso-2a21a9139/"
+            github="https://github.com/andalons"
+            email="#"
+            ></include>
+
+            <include 
+            src="./partials/main_student.html" 
+            profile_image="./assets/images/foto_alicia.jpg.png"
+            name="Alicia González" 
+            description="Salmantina de nacimiento y madrileña de adopción. Buscando un
+            nuevo proyecto de vida, he decidido cambiar la programación de
+            las obras por la programación web. Un salto que hago con ilusión
+            y muchas ganas de seguir desarrollándome."
+            twitter="#"
+            linkedin="https://www.linkedin.com/in/alicia-gonz%C3%A1lez-san-juan/"
+            github="https://github.com/Aliciagsj"
+            email="#"
+            ></include>
+
+           
+    
           </div>
         </div>
       </section>
     </main>
     <!-----------footer----------->
-    <footer class="footer_container wrapper" id="contacto">
-      <div class="footer_name_group">Miudiñas &copy; 2022</div>
-      <nav class="footer_menu">
-        <ul class="footer_menu_links">
-          <li>
-            <a class="footer_link" href="./index.html#equipo">EQUIPO</a>
-          </li>
-          <li>
-            <a class="footer_link" href="./index.html#somos"> QUIÉNES SOMOS </a>
-          </li>
-          <li>
-            <a class="footer_link" href="./contact.html">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer_logo">
-        <img
-          class="footer_logo_adalab"
-          src="./assets/images/logo-adalab.png"
-          alt="Logo Adalab"
-        />
-      </div>
-    </footer>
+    <include src="./partials/footer.html"></include>
   </body>
 </html>

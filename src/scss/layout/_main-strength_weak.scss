@@ -8,6 +8,17 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
+  &::before {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: $tertiary-color;
+    opacity: 0.2;
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    margin-left: -15px;
+  }
   @include tablet() {
     flex-direction: row;
   }
@@ -16,18 +27,18 @@
   }
 }
 
-.strenghths_weaknesses::before {
-  content: " ";
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  background-color: $tertiary-color;
-  opacity: 0.2;
-  position: absolute;
-  left: 50%;
-  top: -15px;
-  margin-left: -15px;
-}
+// .strenghths_weaknesses::before {
+//   content: " ";
+//   width: 30px;
+//   height: 30px;
+//   transform: rotate(45deg);
+//   background-color: $tertiary-color;
+//   opacity: 0.2;
+//   position: absolute;
+//   left: 50%;
+//   top: -15px;
+//   margin-left: -15px;
+// }
 .strenghths_weaknesses_title {
   color: $primary-color;
   font-size: 1.375em;

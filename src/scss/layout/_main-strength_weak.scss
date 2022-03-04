@@ -1,4 +1,4 @@
-.strenghths_weaknesses {
+.strenghths__weaknesses {
   background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   //   margin-left: -15px;
   // }
 
-  &_title {
+  &--title {
     color: $primary-color;
     font-size: 1.375em;
     font-weight: 600;
@@ -28,7 +28,7 @@
     line-height: 2.813em;
   }
 
-  &_content {
+  &--content {
     color: $text-color;
     font-size: 1em;
     line-height: 1.5em;
@@ -41,7 +41,7 @@
   }
 }
 
-.strenghths_weaknesses::before {
+.strenghths__weaknesses::before {
   content: " ";
   width: 30px;
   height: 30px;

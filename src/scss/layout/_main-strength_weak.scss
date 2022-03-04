@@ -19,6 +19,19 @@
     top: -15px;
     margin-left: -15px;
   }
+
+  &_title {
+    color: $primary-color;
+    font-size: 1.375em;
+    font-weight: 600;
+    line-height: 2.813em;
+  }
+
+  &_content {
+    color: $text-color;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
   @include tablet() {
     flex-direction: row;
   }
@@ -39,17 +52,17 @@
 //   top: -15px;
 //   margin-left: -15px;
 // }
-.strenghths_weaknesses_title {
-  color: $primary-color;
-  font-size: 1.375em;
-  font-weight: 600;
-  line-height: 2.813em;
-}
-.strenghths_weaknesses_content {
-  color: $text-color;
-  font-size: 1em;
-  line-height: 1.5em;
-}
+// .strenghths_weaknesses_title {
+//   color: $primary-color;
+//   font-size: 1.375em;
+//   font-weight: 600;
+//   line-height: 2.813em;
+// }
+// .strenghths_weaknesses_content {
+//   color: $text-color;
+//   font-size: 1em;
+//   line-height: 1.5em;
+// }
 
 // @media all and (min-width: 768px) {
 

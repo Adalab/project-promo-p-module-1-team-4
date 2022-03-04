@@ -1,10 +1,23 @@
 // fonts
-$font-main: 'Roboto', sans-serif;
+$font-main: "Open Sans", sans-serif;
 
 // colors
-$color-bg: #f3f4f5;
-$color-secondary: #999;
+$primary-color: #099d8d;
+$secondary-color: #14d9c4;
+$tertiary-color: #b8b8b9;
+$text-color: #54585a;
+$text-color-title: black;
 
 //weight screens
 $tablet: 768px;
 $computer: 1200px;
+
+:root {
+  /* Colores de letras  */
+  --blue-green: #099d8d;
+  --aqua: #14d9c4;
+  --black: #000000;
+  --color-letters: #54585a;
+  --cool-grey: #b8b8b9;
+  --o-border-image: #eaeaea;
+}

@@ -1,110 +1,27 @@
 @import "core/variables";
-/* @import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';*/
+@import "core/reset";
+@import "core/mixins";
+/* @import 'components/code';
+@import 'components/links'; */
 @import "layout/header";
 @import "layout/main-team";
 @import "layout/main-strength_weak";
+@import "layout/main-about_us";
 @import "layout/footer";
 /*
 @import 'pages/index'; */
-@import "core/reset";
-
-:root {
-  /* Colores de letras  */
-  --blue-green: #099d8d;
-  --aqua: #14d9c4;
-  --black: #000000;
-  --color-letters: #54585a;
-  --cool-grey: #b8b8b9;
-  --o-border-image: #eaeaea;
-}
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-main;
   /*   scroll-behavior: smooth;
   scroll-margin-top: -10px; */
 }
 .wrapper {
   padding: 0 15px;
-}
-
-.image {
-  width: 100%;
-}
-.box_we_are {
-  width: 100%;
-  background-color: #fff;
-}
-
-.title_who_we_are {
-  margin-top: 30px;
-  font-family: "Rubik";
-  font-size: 24px;
-  text-align: center;
-  color: var(--blue-green);
-}
-.student {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.photo_student {
-  width: 180px;
-  height: 180px;
-  margin: 30px 55px;
-  border-radius: 4px;
-  border: solid 5px var(--o-border-image);
-}
-
-.name_student {
-  font-size: 20px;
-  line-height: 2.25;
-  text-align: center;
-  color: var(--black);
-}
-
-.description_student {
-  margin: 20px 0 2px;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #54585a;
-}
-
-.box_logos {
-  width: 124px;
-  height: 30px;
-  margin: 15px 83px 0;
-  font-size: 16px;
-  list-style: none;
-  line-height: 1.88;
-  text-align: center;
-  color: var(--blue-green);
-}
-.redes {
-  text-decoration: none;
-  color: var(--blue-green);
-}
-
-@media all and (min-width: 768px) {
-  /* header */
-  /* main_image */
-  /* main_team */
-  /* main_strengths */
-  .strenghths_weaknesses {
-    flex-direction: row;
+  @include tablet {
+    padding: 0 45px;
   }
-  /* main_student */
-  /* footer */
-}
-
-@media all and (min-width: 1200px) {
-  /* header */
-  /* main_image */
-  /* main_team */
-  /* main_strengths */
-  /* main_student */
-  /* footer */
+  @include desktop {
+    padding: 0 138px;
+  }
 }

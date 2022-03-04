@@ -21,20 +21,21 @@
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
-  background-color: #fff;
+  background-color: $tertiary-color;
+  opacity: 0.2;
   position: absolute;
   left: 50%;
   top: -15px;
   margin-left: -15px;
 }
 .strenghths_weaknesses_title {
-  color: var(--blue-green);
+  color: $primary-color;
   font-size: 1.375em;
   font-weight: 600;
   line-height: 2.813em;
 }
 .strenghths_weaknesses_content {
-  color: var(--color-letters);
+  color: $text-color;
   font-size: 1em;
   line-height: 1.5em;
 }

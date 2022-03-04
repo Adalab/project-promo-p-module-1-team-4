@@ -1,8 +1,56 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+  border: solid 1px var(--cool-grey);
+  background-color: #fff;
+  padding: 45px 0;
+}
+
+.footer_name_group {
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--cool-grey);
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  opacity: 0.75;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-align: center;
+  color: var(--color-letters);
+}
+
+.footer_menu_links {
+  list-style: none;
+  padding: 0px;
+  margin: 5px 0;
+}
+
+.footer_link {
+  color: var(--color-letters);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.43;
+  align-items: center;
+}
+
+.footer_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_logo_adalab {
+  width: 115.9px;
+  height: 45px;
+  position: center;
 }

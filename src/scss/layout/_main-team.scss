@@ -1,0 +1,80 @@
+.image {
+  width: 100vw;
+  @media all and (min-width: $tablet) {
+    transform: translate(0, -130px);
+  }
+}
+
+.main__section--img {
+  @media all and (min-width: $tablet) {
+    height: 361px;
+    overflow: hidden;
+  }
+}
+
+.main__section--slogan {
+  position: static;
+}
+.slogan {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.39;
+  color: var(--black);
+
+  @media all and (min-width: $tablet) {
+    opacity: 0.8;
+    width: 27.563em;
+    transform: translateY(-100%);
+  }
+}
+/* TEAM */
+.box_team,
+.slogan {
+  text-align: center;
+  background-color: #fff;
+}
+
+.content_2 {
+  height: 80px;
+}
+
+.box_team {
+  margin-bottom: 30px;
+  @media all and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+}
+.title_team {
+  padding-top: 30px;
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: center;
+  color: var(--aqua);
+  @media all and (min-width: $tablet) {
+    padding-top: 45px;
+    color: var(--blue-green);
+  }
+}
+
+.text_team {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-letters);
+}
+
+.content_1 {
+  border: solid 2px black;
+  padding-right: 4.6875%;
+  padding-left: 4.6875%;
+  position: relative;
+}

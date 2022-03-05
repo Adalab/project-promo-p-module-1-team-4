@@ -17,6 +17,17 @@
   //   margin-left: -15px;
   // }
 
+  &:before {
+    content: " ";
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    margin-left: -15px;
+  }
   &--title {
     color: $primary-color;
     font-size: 1.375em;
@@ -43,16 +54,4 @@
       padding: 0 10px 60px 30px;
     }
   }
-}
-
-.strenghths__weaknesses::before {
-  content: " ";
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  background-color: white;
-  position: absolute;
-  left: 50%;
-  top: -15px;
-  margin-left: -15px;
 }

@@ -1,44 +1,62 @@
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
+  background-color: $primary-color;
   width: 100%;
-  top: 0;
   position: fixed;
-  font-family: "Rubik", sans-serif;
+  top: 0;
   color: #fff;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   z-index: 1;
-}
-.header__top {
-  width: 100%;
-  height: 60px;
-  background-color: var(--blue-green);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__top--title {
-  font-size: 16px;
-  line-height: 1.88;
-  color: #fff;
-}
-
-.header__bottom {
-  background-color: var(--aqua);
-}
-.header__bottom--menu {
-  list-style: none;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu__link {
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  font-family: "Rubik", sans-serif;
-  font-size: 15px;
-  color: #fff;
+  box-sizing: border-box;
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 45px;
+    }
+    @include desktop {
+      padding: 0 138px;
+      max-width: 1280px;
+    }
+  }
+  /* header__title */
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    box-sizing: border-box;
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+  /* header__menu */
+  &__menu {
+    height: 45px;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      height: 60px;
+      background-color: $primary-color;
+    }
+    /* header__menu--link */
+    &--link {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+      color: #fff;
+      box-sizing: border-box;
+      padding: 15px;
+    }
+  }
 }

@@ -1,20 +1,34 @@
-.footer_container {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  margin: 15px 0;
   border: solid 1px var(--cool-grey);
+  width: 100%;
   background-color: #fff;
-  padding: 45px 0;
+  padding: 30px 0px 45px 0px;
+
+  @include tablet() {
+    padding: 24px 45px 60px 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include desktop {
+    padding: 24px 138px 47px 138px;
+  }
 }
 
-.footer_name_group {
+.footer_name-group {
   height: 20px;
   font-size: 14px;
   text-align: center;
   color: var(--cool-grey);
+  @include tablet() {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: left;
+  }
 }
 
 .footer_menu {
@@ -22,31 +36,36 @@
   flex-direction: column;
   align-content: center;
   opacity: 0.75;
-  text-align: center;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.43;
   text-align: center;
   color: var(--color-letters);
+  @include tablet() {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: right;
+  }
 }
 
-.footer_menu_links {
-  list-style: none;
-  padding: 0px;
-  margin: 5px 0;
-}
-
-.footer_link {
+.footer_menu_link {
   color: var(--color-letters);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.43;
   align-items: center;
+  padding: 0 10px;
+  margin: 5px 0;
 }
 
 .footer_logo {
   display: flex;
   justify-content: center;
+  @include tablet() {
+    grid-row: 2;
+    grid-column: 1;
+    justify-content: left;
+  }
 }
 
 .footer_logo_adalab {

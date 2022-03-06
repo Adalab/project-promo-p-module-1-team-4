@@ -1,6 +1,7 @@
 .about_us {
   width: 100%;
   background-color: $backgroun-body_color;
+  padding-bottom: 60px;
 }
 
 .title_about_us {
@@ -25,14 +26,22 @@
 
   @include tablet() {
     gap: 30px;
+    &:nth-child(odd) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .container_text {
+        text-align: left;
+      }
+    }
     &:nth-child(even) {
       flex-direction: row-reverse;
       align-items: flex-start;
       justify-content: space-between;
-    }
-    &:nth-child(odd) {
-      flex-direction: row;
-      justify-content: space-between;
+
+      .container_text {
+        text-align: right;
+      }
     }
   }
 }
@@ -68,7 +77,6 @@
 }
 
 .box_logos {
-  width: 124px;
   height: 30px;
   margin: 15px 120px;
   font-size: 16px;

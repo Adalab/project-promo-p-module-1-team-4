@@ -37,18 +37,18 @@
   border-radius: 4px;
   border: solid 5px $border-image;
   @include tablet() {
-    margin: 30px 29px;
+    margin: 0;
   }
-  @include desktop() {
-    margin: 30px 45px;
-  }
+  // @include desktop() {
+  //   margin: 30px 45px;
+  // }
 }
 
-.container_text {
-  @include tablet() {
-    padding-top: 20px;
-  }
-}
+// .container_text {
+//   @include tablet() {
+//     padding-top: 20px;
+//   }
+// }
 .name_student {
   font-size: 20px;
   padding-top: 22px;

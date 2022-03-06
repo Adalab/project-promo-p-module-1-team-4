@@ -1,15 +1,14 @@
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  border: solid 1px var(--cool-grey);
-  width: 100%;
-  background-color: #fff;
+  border: solid 1px $tertiary-color;
+  width: 100vw;
+  background-color: $backgroun-body_color;
   padding: 30px 0px 45px 0px;
 
   @include tablet() {
-    padding: 24px 45px 60px 45px;
+    padding: 24px 35px 60px 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -17,59 +16,59 @@
   @include desktop {
     padding: 24px 138px 47px 138px;
   }
-}
 
-.footer_name-group {
-  height: 20px;
-  font-size: 14px;
-  text-align: center;
-  color: var(--cool-grey);
-  @include tablet() {
-    grid-row: 1;
-    grid-column: 1;
-    text-align: left;
+  &__name-group {
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: $tertiary-color;
+    line-height: 1.43;
+    text-align: center;
+
+    @include tablet() {
+      grid-row: 1;
+      grid-column: 1;
+      align-self: flex-start;
+      text-align: left;
+      margin: 6px 182px 15px 0;
+    }
+    @include desktop() {
+      margin: 6px 428px 15px 0;
+    }
   }
-}
 
-.footer_menu {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  opacity: 0.75;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.43;
-  text-align: center;
-  color: var(--color-letters);
-  @include tablet() {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    text-align: right;
+  &__menu {
+    opacity: 0.75;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    text-align: center;
+    margin: 20px 29px 30px;
+    @include tablet() {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      line-height: 2.14;
+      text-align: right;
+      margin: 0 0 0 182px;
+    }
+    &--link {
+      color: $text-color;
+      text-decoration: none;
+      align-items: center;
+      padding: 0 10px;
+    }
   }
-}
 
-.footer_menu_link {
-  color: var(--color-letters);
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.43;
-  align-items: center;
-  padding: 0 10px;
-  margin: 5px 0;
-}
-
-.footer_logo {
-  display: flex;
-  justify-content: center;
-  @include tablet() {
-    grid-row: 2;
-    grid-column: 1;
-    justify-content: left;
+  &__logo {
+    justify-content: center;
+    @include tablet() {
+      grid-row: 2;
+      grid-column: 1;
+      justify-content: left;
+    }
+    &--adalab {
+      width: 115.9px;
+      height: 45px;
+    }
   }
-}
-
-.footer_logo_adalab {
-  width: 115.9px;
-  height: 45px;
-  position: center;
 }

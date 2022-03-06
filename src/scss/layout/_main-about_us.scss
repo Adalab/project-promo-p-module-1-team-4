@@ -4,11 +4,19 @@
 }
 
 .title_about_us {
-  margin-top: 30px;
+  margin: 30px 0;
   font-family: "Rubik";
   font-size: 24px;
   text-align: center;
   color: $primary-color;
+}
+
+.student_list {
+  @include tablet() {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
 }
 .student {
   display: flex;
@@ -16,8 +24,7 @@
   align-items: center;
 
   @include tablet() {
-    // flex-direction: row;
-    // align-items: flex-start;
+    gap: 30px;
     &:nth-child(even) {
       flex-direction: row-reverse;
       align-items: flex-start;
@@ -39,19 +46,10 @@
   @include tablet() {
     margin: 0;
   }
-  // @include desktop() {
-  //   margin: 30px 45px;
-  // }
 }
 
-// .container_text {
-//   @include tablet() {
-//     padding-top: 20px;
-//   }
-// }
 .name_student {
   font-size: 20px;
-  padding-top: 22px;
   line-height: 2.25;
   text-align: center;
   color: $text-color-title;

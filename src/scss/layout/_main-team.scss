@@ -16,11 +16,10 @@
   position: static;
 }
 .slogan {
-  margin: 0;
-  padding: 10px;
+  /* margin: 0; */
+  /* padding: 10px; */
   width: 100%;
   height: fit-content;
-  background-color: white;
   position: absolute;
   transform: translateY(-50%);
   font-size: 18px;
@@ -38,11 +37,7 @@
 .box_team,
 .slogan {
   text-align: center;
-  background-color: #fff;
-}
-
-.content_2 {
-  height: 80px;
+  background-color: $backgroun-body_color;
 }
 
 .box_team {
@@ -70,11 +65,4 @@
   line-height: 1.5;
   text-align: center;
   color: var(--color-letters);
-}
-
-.content_1 {
-  border: solid 2px black;
-  padding-right: 4.6875%;
-  padding-left: 4.6875%;
-  position: relative;
 }

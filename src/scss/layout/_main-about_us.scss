@@ -48,29 +48,22 @@
   }
 }
 
+.container_text {
+  text-align: center;
+}
 .name_student {
   font-size: 20px;
   line-height: 2.25;
-  text-align: center;
   color: $text-color-title;
-  @include tablet() {
-    text-align: start;
-  }
 }
 
 .description_student {
   margin: 20px 0 2px;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   color: $text-color;
   @include tablet() {
-    text-align: start;
     margin: 0;
-    width: 442px;
-  }
-  @include desktop() {
-    width: 439px;
   }
 }
 
@@ -81,7 +74,6 @@
   font-size: 16px;
   list-style: none;
   line-height: 1.88;
-  text-align: center;
   @include tablet() {
     margin: 0;
   }

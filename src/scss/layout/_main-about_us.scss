@@ -26,9 +26,9 @@
 
   @include tablet() {
     gap: 30px;
+    align-items: flex-start;
     &:nth-child(odd) {
       flex-direction: row;
-      justify-content: space-between;
 
       .container_text {
         text-align: left;
@@ -36,13 +36,14 @@
     }
     &:nth-child(even) {
       flex-direction: row-reverse;
-      align-items: flex-start;
-      justify-content: space-between;
 
       .container_text {
         text-align: right;
       }
     }
+  }
+  @include desktop() {
+    gap: 45px;
   }
 }
 
@@ -54,11 +55,14 @@
   border: solid 5px $border-image;
   @include tablet() {
     margin: 0;
+    width: 278px;
+    height: 278px;
   }
 }
 
 .container_text {
   text-align: center;
+  max-width: 440px;
 }
 .name_student {
   font-size: 20px;

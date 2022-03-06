@@ -1,11 +1,26 @@
-.stren__weak {
+.wwrapper {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 30px;
+  }
+  @include desktop {
+    max-width: 1000px;
+  }
+}
+
+.stren_weak__container {
   background-color: #f1f1f1;
+}
+
+.stren_weak {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 15px;
   position: relative;
-  padding: 0 15px 45px 15px;
+  padding-bottom: 45px;
 
   &:before {
     content: " ";
@@ -18,30 +33,32 @@
     top: -15px;
     margin-left: -15px;
   }
-  &--title {
-    color: $primary-color;
-    font-size: 1.375em;
-    font-weight: 600;
-    text-transform: capitalize;
-    line-height: 2.813em;
-    padding-top: 30px;
-  }
 
-  &--content {
-    color: $text-color;
-    font-size: 1em;
-    line-height: 1.5em;
-  }
   @include tablet() {
     flex-direction: row;
-    &--content {
-      padding: 0 10px 60px 30px;
-    }
+    gap: 30px;
   }
+
   @include desktop() {
-    flex-direction: row;
+    gap: 45px;
+  }
+
+  &__article {
+    flex: 1;
+
+    &--title {
+      color: $primary-color;
+      font-size: 1.375em;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 2.813em;
+      padding-top: 30px;
+    }
+
     &--content {
-      padding: 0 10px 60px 30px;
+      color: $text-color;
+      font-size: 1em;
+      line-height: 1.5em;
     }
   }
 }

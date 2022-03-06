@@ -18,16 +18,18 @@
   @include tablet() {
     // flex-direction: row;
     // align-items: flex-start;
-    &:nth-child(odd) {
-      flex-direction: row-reverses;
-      align-items: normal;
-    }
     &:nth-child(even) {
-      flex-direction: row-reverses;
-      align-items: flex-end;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &:nth-child(odd) {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
+
 .photo_student {
   width: 180px;
   height: 180px;
@@ -42,12 +44,11 @@
   }
 }
 
-// @include tablet() {
-//   .container_text {
-//     flex-direction: row-reverse;
-//     padding-top: 20px;
-//   }
-
+.container_text {
+  @include tablet() {
+    padding-top: 20px;
+  }
+}
 .name_student {
   font-size: 20px;
   padding-top: 22px;

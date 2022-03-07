@@ -1,28 +1,29 @@
 .image {
+  background: url("https://i.postimg.cc/J4SGc91w/img-grupo.jpg");
+  background-size: cover;
+  height: 421px;
+  width: 100%;
+
   @include tablet {
     height: 361px;
-    overflow: hidden;
+    background: url("https://i.postimg.cc/J4SGc91w/img-grupo.jpg") center -150px;
+    background-size: cover;
   }
-
-  &__picture {
-    width: 100%;
-    /* background-size: contain; */
-    @include tablet {
-      transform: translate(0, -130px);
-    }
+  @include desktop {
+    background: url("https://i.postimg.cc/J4SGc91w/img-grupo.jpg") center -350px;
+    background-size: cover;
   }
 }
 
 .slogan {
-  position: static;
-  background-color: $background-body_color;
   text-align: center;
   &__text {
-    text-transform: uppercase;
     width: 100%;
     height: fit-content;
-    position: absolute;
+    position: relative;
     transform: translateY(-50%);
+    background-color: $background-body_color;
+    text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.39;

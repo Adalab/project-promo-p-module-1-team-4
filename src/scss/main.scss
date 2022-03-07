@@ -10,12 +10,14 @@
 @import "layout/footer";
 /*
 @import 'pages/index'; */
+:root {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: $font-main;
-  /*   scroll-behavior: smooth;
-  scroll-margin-top: -10px; */
 }
+
 .wrapper {
   padding: 0 15px;
   @include tablet {

@@ -1,12 +1,13 @@
 .image {
-  @media all and (min-width: $tablet) {
+  @include tablet {
     height: 361px;
     overflow: hidden;
   }
 
   &__picture {
     width: 100%;
-    @media all and (min-width: $tablet) {
+    /* background-size: contain; */
+    @include tablet {
       transform: translate(0, -130px);
     }
   }
@@ -14,8 +15,10 @@
 
 .slogan {
   position: static;
-  background-color: $backgroun-body_color;
+  background-color: $background-body_color;
+  text-align: center;
   &__text {
+    text-transform: uppercase;
     width: 100%;
     height: fit-content;
     position: absolute;
@@ -23,9 +26,9 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.39;
-    color: var(--black);
+    color: $text-color-title;
 
-    @media all and (min-width: $tablet) {
+    @include tablet {
       opacity: 0.8;
       width: 27.563em;
       transform: translateY(-100%);
@@ -33,35 +36,29 @@
   }
 }
 
-/* TEAM */
-.team,
-.slogan {
-  text-align: center;
-  background-color: $backgroun-body_color;
-}
-
 .team {
   margin-bottom: 30px;
-
-  @media all and (min-width: $tablet) {
+  text-align: center;
+  @include tablet {
     margin-bottom: 60px;
   }
   &__title {
+    text-transform: uppercase;
     padding-top: 30px;
     font-family: "Rubik";
     font-size: 24px;
     font-weight: 500;
     line-height: 1.88;
-    color: var(--aqua);
-    @media all and (min-width: $tablet) {
+    color: $secondary-color;
+    @include tablet {
       padding-top: 45px;
-      color: var(--blue-green);
+      color: $primary-color;
     }
   }
   &__text {
     font-size: 16px;
     line-height: 1.5;
-    color: var(--color-letters);
+    color: $text-color;
     gap: 12px;
   }
 }

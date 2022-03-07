@@ -5,7 +5,7 @@
   }
 
   &__picture {
-    width: 100vw;
+    width: 100%;
     @media all and (min-width: $tablet) {
       transform: translate(0, -130px);
     }
@@ -14,6 +14,7 @@
 
 .slogan {
   position: static;
+  background-color: $backgroun-body_color;
   &__text {
     width: 100%;
     height: fit-content;
@@ -33,7 +34,7 @@
 }
 
 /* TEAM */
-.box_team,
+.team,
 .slogan {
   text-align: center;
   background-color: $backgroun-body_color;
@@ -41,10 +42,11 @@
 
 .team {
   margin-bottom: 30px;
+
   @media all and (min-width: $tablet) {
     margin-bottom: 60px;
   }
-  &title {
+  &__title {
     padding-top: 30px;
     font-family: "Rubik";
     font-size: 24px;
@@ -60,5 +62,6 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-letters);
+    gap: 12px;
   }
 }

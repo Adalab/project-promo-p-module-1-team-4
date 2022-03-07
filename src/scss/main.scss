@@ -1,8 +1,10 @@
 @import "core/variables";
 @import "core/reset";
+
 @import "core/mixins";
 /* @import 'components/code';
 @import 'components/links'; */
+@import "./core/wrapper";
 @import "layout/header";
 @import "layout/main-team";
 @import "layout/main-strength_weak";
@@ -16,16 +18,6 @@
 
 body {
   font-family: $font-main;
-}
-
-.wrapper {
-  padding: 0 15px;
-  @include tablet {
-    padding: 0 45px;
-  }
-  @include desktop {
-    padding: 0 138px;
-  }
 }
 
 #equipo,

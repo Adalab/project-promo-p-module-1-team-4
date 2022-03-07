@@ -25,3 +25,11 @@ body {
     padding: 0 138px;
   }
 }
+
+#equipo,
+#somos {
+  scroll-margin-top: 105px;
+  @include tablet {
+    scroll-margin-top: 60px;
+  }
+}

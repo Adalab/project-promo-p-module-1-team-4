@@ -28,14 +28,14 @@
         &:nth-child(odd) {
           flex-direction: row;
 
-          .container_text {
+          .container__student {
             text-align: left;
           }
         }
         &:nth-child(even) {
           flex-direction: row-reverse;
 
-          .container_text {
+          .container__student {
             text-align: right;
           }
         }

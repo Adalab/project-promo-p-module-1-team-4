@@ -4,17 +4,16 @@
   align-items: center;
   border: solid 1px $tertiary-color;
   width: 100%;
-  background-color: $backgroun-body_color;
-  padding: 30px 0px 45px 0px;
+  background-color: $background-body_color;
+  padding-top: 30px;
+  padding-bottom: 60px;
 
   @include tablet() {
-    padding: 24px 35px 60px 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
   @include desktop {
-    padding: 24px 138px 47px 138px;
   }
 
   &__name-group {
@@ -24,16 +23,15 @@
     color: $tertiary-color;
     line-height: 1.43;
     text-align: center;
+    text-transform: capitalize;
 
     @include tablet() {
       grid-row: 1;
       grid-column: 1;
       align-self: flex-start;
       text-align: left;
-      margin: 6px 182px 15px 0;
     }
     @include desktop() {
-      margin: 6px 428px 15px 0;
     }
   }
 
@@ -43,24 +41,30 @@
     font-weight: 600;
     line-height: 1.43;
     text-align: center;
-    margin: 20px 29px 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     @include tablet() {
       grid-row-start: 1;
       grid-row-end: 3;
       line-height: 2.14;
       text-align: right;
-      margin: 0 0 0 182px;
+      padding: 0px;
     }
     &--link {
       color: $text-color;
       text-decoration: none;
       align-items: center;
-      padding: 0 10px;
+      text-transform: uppercase;
+      padding: 0px 15px;
+      @include tablet() {
+        padding-right: 0px;
+      }
     }
   }
 
   &__logo {
     justify-content: center;
+
     @include tablet() {
       grid-row: 2;
       grid-column: 1;

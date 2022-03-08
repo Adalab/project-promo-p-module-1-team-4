@@ -8,18 +8,10 @@ input {
   appearance: none;
 }
 
-.container_form {
-  height: 850px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-  font-size: 14px;
-  font-family: $font-main;
-  text-transform: capitalize;
-}
-.small {
+.team__text--small {
   font-size: 12px;
+  color: $text-color;
+  padding-top: 30px;
 }
 .span {
   color: $secondary-color;
@@ -43,5 +35,46 @@ input {
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOygfKSG1Qze_Fyqby8jBR-xCID-oa856JF_PjIUBY33IGD_1W2T6DS7XNCggKXRkej3Y&usqp=CAU")
       center 0px no-repeat;
     background-size: cover;
+  }
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  font-size: 14px;
+  font-family: $font-main;
+  padding: 60px 0px;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.buttom {
+  height: 45px;
+  width: 290px;
+  background-color: $primary-color;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-family: $font-main;
+  text-transform: uppercase;
+  border: 0px;
+  align-content: center;
+  @include tablet {
+    width: 206px;
+  }
+  @include tablet {
+    width: 278px;
   }
 }

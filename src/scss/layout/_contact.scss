@@ -1,0 +1,47 @@
+body {
+  font-family: $font-main;
+  height: 100vh;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.container_form {
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  font-size: 14px;
+  font-family: $font-main;
+  text-transform: capitalize;
+}
+.small {
+  font-size: 12px;
+}
+.span {
+  color: $secondary-color;
+}
+.image-2 {
+  width: 100%;
+  height: 421px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOygfKSG1Qze_Fyqby8jBR-xCID-oa856JF_PjIUBY33IGD_1W2T6DS7XNCggKXRkej3Y&usqp=CAU")
+    center 80px no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+
+  @include tablet {
+    height: 361px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOygfKSG1Qze_Fyqby8jBR-xCID-oa856JF_PjIUBY33IGD_1W2T6DS7XNCggKXRkej3Y&usqp=CAU")
+      center -5px no-repeat;
+    background-size: cover;
+  }
+  @include desktop {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOygfKSG1Qze_Fyqby8jBR-xCID-oa856JF_PjIUBY33IGD_1W2T6DS7XNCggKXRkej3Y&usqp=CAU")
+      center 0px no-repeat;
+    background-size: cover;
+  }
+}

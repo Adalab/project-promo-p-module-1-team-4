@@ -4,32 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Contact</title>
-  </head>
-
-  <body class="">
-    <include src="./partials/header.html"></include>
-    <img src="" alt="" />
-    Contacto Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-    totam odit quod accusamus repellat deserunt repellendus quasi dolorem! Quae
-    non porro cupiditate vitae sequi veritatis quis recusandae laborum ipsa
-    veniam.
-    <!-- <form action="" method="get">
-    <label for="name">nombre completo <span>*</span> </label>
-    <input type="text" id="name" placeholder="Nombre..." required />
-    <label for="email">email <span>*</span> </label>
-    <input
-      type="email"
-      id="email"
-      value="nombre.apellidos@mail.com"
-      required
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
     />
-    <label for="tel"> teléfono <span>*</span> </label>
-    <input type="tel" id="tel" placeholder="Ej: 123456789" required />
-    <label for="message">mensaje:</label>
-    <textarea id="message" name="message" rows="8" cols="50"></textarea>
-    <input type="submit" value="enviar" /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+
+    <main class="team">
+      <div class="image-2"></div>
+      <div class="wrapper">
+        <h1 class="about_us__title">contacto</h1>
+        <p class="team__text">
+          Contacto Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Mollitia totam odit quod accusamus repellat deserunt repellendus quasi
+          dolorem! Quae non porro cupiditate vitae sequi veritatis quis
+          recusandae laborum ipsa veniam.
+        </p>
+        <small class="team__text small"
+          >todos los campos marcados con <span>*</span> son obligatorios.</small
+        >
+        <include src="./partials/form.html"></include>
+      </div>
+    </main>
     <include src="./partials/footer.html"></include>
   </body>
 </html>

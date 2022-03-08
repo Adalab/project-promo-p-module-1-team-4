@@ -1,6 +1,5 @@
 @import "core/variables";
 @import "core/reset";
-
 @import "core/mixins";
 /* @import 'components/code';
 @import 'components/links'; */
@@ -10,9 +9,9 @@
 @import "layout/main-strength_weak";
 @import "layout/main-about_us";
 @import "layout/footer";
-/*
+@import "layout/contact"; /*
 @import 'pages/index'; */
-:root {
+:root  {
   scroll-behavior: smooth;
 }
 

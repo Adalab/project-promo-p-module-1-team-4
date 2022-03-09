@@ -11,3 +11,19 @@
     max-width: 1260px;
   }
 }
+
+/* wrapper de contact.html */
+.wrapper2 {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 440px;
+
+  @include tablet {
+    padding: 0;
+  }
+  @include desktop {
+    // padding + desktop min-width
+    max-width: 600px;
+  }
+}

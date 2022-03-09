@@ -11,12 +11,13 @@
   </div>
   <div class="container_form__email_tel">
     <div class="item item__email">
-      <label for="item item__email">Email <span class="span">*</span> </label>
+      <label for="email">Email <span class="span">*</span> </label>
       <input
         class="box"
         type="email"
         id="email"
-        value="nombre.apellidos@mail.com"
+        placeholder="nombre.apellidos@mail.com"
+        name="email"
         required
       />
     </div>
@@ -27,6 +28,7 @@
         type="tel"
         id="tel"
         placeholder="Ej: 123456789"
+        name="tel"
         required
       />
     </div>
@@ -39,7 +41,7 @@
       name="message"
       rows="8"
       cols="50"
-      placeholder="Qué necesitas"
+      placeholder="¿Qué necesitas?"
     ></textarea>
   </div>
   <div class="item item__button">

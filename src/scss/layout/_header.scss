@@ -20,11 +20,11 @@
     @include tablet {
       display: flex;
       justify-content: space-between;
-      margin: 0 30px;
+      padding: 0 45px;
     }
     @include desktop {
       margin: 0 auto;
-      max-width: 1120px;
+      max-width: 1260px;
     }
   }
   /* header__title */
@@ -60,14 +60,8 @@
       box-sizing: border-box;
       padding: 15px;
       @include tablet {
-        padding: 0 15;
+        padding: 15px 0 15px 30px;
       }
     }
-  }
-}
-
-.link-contact {
-  @include tablet {
-    padding-right: 0;
   }
 }

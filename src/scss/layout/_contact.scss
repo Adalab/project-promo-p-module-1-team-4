@@ -1,6 +1,7 @@
 body {
   font-family: $font-main;
   height: 100vh;
+  color: $text-color;
 }
 input {
   -webkit-appearance: none;
@@ -27,9 +28,6 @@ input {
 
   @include tablet {
     height: 361px;
-    /*     background: url("https://2.bp.blogspot.com/-kOs9MD137Ww/XLwuPJWchiI/AAAAAAAAF9g/1obWagWpZfw6b2fBIvJL6Ea9whWV4cE1gCLcBGAs/s1600/IMG_5923.JPG")
-      center -5px no-repeat;
-    background-size: cover; */
   }
   @include desktop {
     background: url("https://2.bp.blogspot.com/-kOs9MD137Ww/XLwuPJWchiI/AAAAAAAAF9g/1obWagWpZfw6b2fBIvJL6Ea9whWV4cE1gCLcBGAs/s1600/IMG_5923.JPG")

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="header__title">Miudiñas</h1>
+
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__menu--link" href="./index.html#equipo">Equipo</a>
+            </li>
+            <li>
+              <a class="header__menu--link" href="./index.html#somos"
+                >Quienes somos</a
+              >
+            </li>
+            <li>
+              <a class="header__menu--link" href="./contact.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main class="team">
+      <div class="image-2"></div>
+      <div class="wrapper2">
+        <h1 class="about_us__title">contacto</h1>
+        <div>
+          <p class="team__text">
+            Contacte con nosotras, rellene el siguiente formulario y estaremos
+            encantadas de responderle.
+          </p>
+          <p class="team__text--small">
+            <small>
+              Todos los campos marcados con <span class="span">*</span> son
+              obligatorios.
+            </small>
+          </p>
+        </div>
+        <!-- margin-top en mobile 105 y a partir de tablet 60 -->
+
+        <form
+          action="https://formspree.io/f/mdobzjww"
+          method="post"
+          class="container_form"
+        >
+          <div class="item">
+            <label for="name">Nombre completo <span class="span">*</span> </label>
+            <input class="box" type="text" id="name" placeholder="Nombre..." required />
+          </div>
+          <div class="container_form__email_tel">
+            <div class="item item__email">
+              <label for="email">Email <span class="span">*</span> </label>
+              <input
+                class="box"
+                type="email"
+                id="email"
+                placeholder="nombre.apellidos@mail.com"
+                name="email"
+                required
+              />
+            </div>
+            <div class="item">
+              <label for="tel"> Teléfono <span class="span">*</span> </label>
+              <input
+                class="box"
+                type="tel"
+                id="tel"
+                placeholder="Ej: 123456789"
+                name="tel"
+                required
+              />
+            </div>
+          </div>
+          <div class="item">
+            <label for="message">Mensaje:</label>
+            <textarea
+              class="box box__area"
+              id="message"
+              name="message"
+              rows="8"
+              cols="50"
+              placeholder="¿Qué necesitas?"
+            ></textarea>
+          </div>
+          <div class="item item__button">
+            <input class="buttom" type="submit" value="enviar" />
+          </div>
+        </form>
+
+      </div>
+    </main>
+    <footer class="container_footer">
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer__name-group">miudiñas &copy; 2022</div>
+          <nav class="footer__menu">
+            <ul>
+              <li>
+                <a class="footer__menu--link" href="./index.html#equipo">equipo</a>
+              </li>
+              <li>
+                <a class="footer__menu--link" href="./index.html#somos">
+                  quiénes somos
+                </a>
+              </li>
+              <li>
+                <a class="footer__menu--link" href="./contact.html#contacto"
+                  >contacto</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__logo">
+            <img
+              class="footer__logo--adalab"
+              src="./assets/images/logo-adalab.png"
+              alt="Logo Adalab"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

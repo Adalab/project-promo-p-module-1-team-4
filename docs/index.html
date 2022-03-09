@@ -2,67 +2,295 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miudiñas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="header__title">Miudiñas</h1>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__menu--link" href="./index.html#equipo">Equipo</a>
+            </li>
+            <li>
+              <a class="header__menu--link" href="./index.html#somos"
+                >Quienes somos</a
+              >
+            </li>
+            <li>
+              <a class="header__menu--link" href="./contact.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+    <main>
+      <section class="image">
+        <div class="wrapper">
+          <p class="slogan__text slogan">Nunca deixemos de aprender</p>
+        </div>
+      </section>
 
-          </li>
-        </ul>
-      </main>
+      <!-------------  TEAM --------------->
+      <section id="equipo">
+        <article class="team wrapper">
+          <h2 class="team__title">Equipo</h2>
+          <p class="team__text">
+            Repartidas entre el norte y el centro de la Península, las Miudiñas
+            compartimos el espíritu gallego, de ahí nuestro nombre. Somos emprendedoras,
+            valientes y suficientemente cabezotas como para pelearnos con las
+            propiedades de un elemento hasta que este actúe a nuestro antojo.
+          </p>
+          <p class="team__text">
+            Nuestro objetivo principal es adquirir las competencias necesarias para
+            convertirnos en programadoras profesionales, pero además queremos disfrutar
+            del camino. Por eso hemos creado un entorno de trabajo en el que el respeto
+            y el apoyo grupal es primordial.
+          </p>
+        </article>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <!---- strenghths_weaknesses ---->
+        <article class="stren_weak__container">
+          <div class="stren_weak wrapper">
+            <article class="stren_weak__article">
+              <h2 class="stren_weak__article--title">fortalezas</h2>
+              <p class="stren_weak__article--content">
+                Si algo caracteriza al equipo de las Miudiñas es nuestra capacidad de
+                trabajo en equipo. Todas tenemos opiniones formadas, pero sabemos
+                escucharnos, razonar y ceder. Empatizamos con nuestras compañeras y
+                juntas tomamos decisiones.
+              </p>
+            </article>
+            <article class="stren_weak__article">
+              <h2 class="stren_weak__article--title">debilidades</h2>
 
-        </small>
-      </footer>
+              <p class="stren_weak__article--content">
+                Nuestra debilidad es que a veces la autoexigencia agota nuestras
+                fuerzas. Nos cuesta dejar las cosas antes de ponerle un punto final.
+                Esto a veces hace que se nos olvide que fuera hace una tarde maravillosa
+                para dar un paseo.
+              </p>
+            </article>
+          </div>
+        </article>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+      </section>
+      <!------------about_us------------>
+      <section class="about_us" id="somos">
+        <div class="wrapper">
+          <h2 class="about_us__title">Quiénes somos</h2>
+          <div class="about_us__list">
+            <article class="about_us__list--student">
+              <img
+                class="about_us__list--student--photo"
+                src="./assets/images/IMG_0533.jpg"
+                alt="Foto de Gloria Rodríguez"
+              />
+              <div class="container__student">
+                <h3 class="container__student--name">Gloria Rodríguez</h3>
+                <p class="container__student--description">Gallega y Canaria de sangre. Con estudios de Administración y
+            Finanzas, encontrandome con mi nuevo yo como desarroladora web.
+            Embarcada con mis compañeras en la gran aventura del Bootcamp de
+            Adalab. Mi objetivo, nunca parar de aprender.</p>
+                <div class="container__student--logos">
+                  <a class="container__student--redes" href="https://twitter.com/gloriarodrife" target="_blank">
+                    <i class="fa-brands fa-twitter"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://www.linkedin.com/in/gloriarodrife/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://github.com/gloriarodrife" target="_blank">
+                    <i class="fa-brands fa-github-alt"></i
+                  ></a>
+                  ·
+                  <a class="container__student--redes" href="mailto:gloriarodrife@gmail.com" target="_blank"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="about_us__list--student">
+              <img
+                class="about_us__list--student--photo"
+                src="./assets/images/foto_sandra.jpeg"
+                alt="Foto de Sandra Rial"
+              />
+              <div class="container__student">
+                <h3 class="container__student--name">Sandra Rial</h3>
+                <p class="container__student--description"> Gallega de raíces y alma de trotamundo. Con estudios en Turismo
+            y Organización de eventos. Ahora me propongo poder vivir cerca
+            del mar y encontrar en este mundo de la programación, un nueva
+            manera de disfrutar creando.</p>
+                <div class="container__student--logos">
+                  <a class="container__student--redes" href="https://twitter.com/LeoDiCaprio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <i class="fa-brands fa-twitter"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://www.linkedin.com/in/sandra-rial-p%C3%A9rez-a376711b7/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://github.com/SandraRial" target="_blank">
+                    <i class="fa-brands fa-github-alt"></i
+                  ></a>
+                  ·
+                  <a class="container__student--redes" href="mailto:sandrarialperez@gmail.com" target="_blank"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="about_us__list--student">
+              <img
+                class="about_us__list--student--photo"
+                src="./assets/images/img-prado.jpg"
+                alt="Foto de Prado Carretero"
+              />
+              <div class="container__student">
+                <h3 class="container__student--name">Prado Carretero</h3>
+                <p class="container__student--description"> Paciente, con gran capacidad de adaptación y mamá de dos
+            chiquitines. Descubriendo el mundo diseño-web de pura casualidad
+            y con mucho entusiasmo y emoción,.. con ganas de gritarle al
+            mundo por las mañanas… ¡por fin encontré mi camino!</p>
+                <div class="container__student--logos">
+                  <a class="container__student--redes" href="https://twitter.com/detpikachumovie?lang=en" target="_blank">
+                    <i class="fa-brands fa-twitter"></i> </a
+                  >·
+                  <a class="container__student--redes" href="www.linkedin.com/in/pradocarretero/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://github.com/PradoCarretero" target="_blank">
+                    <i class="fa-brands fa-github-alt"></i
+                  ></a>
+                  ·
+                  <a class="container__student--redes" href="mailto:p.carreteroayala@gmail.com" target="_blank"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="about_us__list--student">
+              <img
+                class="about_us__list--student--photo"
+                src="./assets/images/alta web-11281.jpg"
+                alt="Foto de Andrea Alonso"
+              />
+              <div class="container__student">
+                <h3 class="container__student--name">Andrea Alonso</h3>
+                <p class="container__student--description">Graduada en Comunicación Audiovisual y con estudios de postgrado
+            en diferentes ámbitos creativos (diseño gráfico y fotografía,
+            entre otros), actualmente se embarca en un nuevo proyecto: el
+            dominio del desarrollo web de la mano de los profesionales de
+            Adalab.</p>
+                <div class="container__student--logos">
+                  <a class="container__student--redes" href="https://twitter.com/andrea_a_cor" target="_blank">
+                    <i class="fa-brands fa-twitter"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://www.linkedin.com/in/andrea-alonso-2a21a9139/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://github.com/andalons" target="_blank">
+                    <i class="fa-brands fa-github-alt"></i
+                  ></a>
+                  ·
+                  <a class="container__student--redes" href="mailto:andreacor001@gmail.com" target="_blank"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="about_us__list--student">
+              <img
+                class="about_us__list--student--photo"
+                src="./assets/images/foto_alicia.jpg.png"
+                alt="Foto de Alicia González"
+              />
+              <div class="container__student">
+                <h3 class="container__student--name">Alicia González</h3>
+                <p class="container__student--description">Salmantina de nacimiento y madrileña de adopción. Buscando un
+            nuevo proyecto de vida, he decidido cambiar la programación de
+            las obras por la programación web. Un salto que hago con ilusión
+            y muchas ganas de seguir desarrollándome.</p>
+                <div class="container__student--logos">
+                  <a class="container__student--redes" href="https://twitter.com/ClooneysOpenHse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <i class="fa-brands fa-twitter"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://www.linkedin.com/in/alicia-gonz%C3%A1lez-san-juan/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> </a
+                  >·
+                  <a class="container__student--redes" href="https://github.com/Aliciagsj" target="_blank">
+                    <i class="fa-brands fa-github-alt"></i
+                  ></a>
+                  ·
+                  <a class="container__student--redes" href="mailto:aliciagsj@gmail.com" target="_blank"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-----------footer----------->
+    <footer class="container_footer">
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer__name-group">miudiñas &copy; 2022</div>
+          <nav class="footer__menu">
+            <ul>
+              <li>
+                <a class="footer__menu--link" href="./index.html#equipo">equipo</a>
+              </li>
+              <li>
+                <a class="footer__menu--link" href="./index.html#somos">
+                  quiénes somos
+                </a>
+              </li>
+              <li>
+                <a class="footer__menu--link" href="./contact.html#contacto"
+                  >contacto</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__logo">
+            <img
+              class="footer__logo--adalab"
+              src="./assets/images/logo-adalab.png"
+              alt="Logo Adalab"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>

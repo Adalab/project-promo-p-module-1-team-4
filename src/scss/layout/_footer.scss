@@ -1,9 +1,15 @@
+.container_footer {
+  border: solid 1px $tertiary-color;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  border: solid 1px $tertiary-color;
-  width: 100%;
+  align-content: center;
+
   background-color: $background-body_color;
   padding-top: 30px;
   padding-bottom: 60px;

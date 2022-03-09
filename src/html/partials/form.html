@@ -1,41 +1,48 @@
 <!-- margin-top en mobile 105 y a partir de tablet 60 -->
 
-<form action="./contact.html" method="get" class="container_form wrapper">
+<form
+  action="https://formspree.io/f/mdobzjww"
+  method="get"
+  class="container_form"
+>
   <div class="item">
     <label for="name">Nombre completo <span class="span">*</span> </label>
     <input class="box" type="text" id="name" placeholder="Nombre..." required />
   </div>
-  <div class="item">
-    <label for="email">Email <span class="span">*</span> </label>
-    <input
-      class="box"
-      type="email"
-      id="email"
-      value="nombre.apellidos@mail.com"
-      required
-    />
-  </div>
-  <div class="item">
-    <label for="tel"> Teléfono <span class="span">*</span> </label>
-    <input
-      class="box"
-      type="tel"
-      id="tel"
-      placeholder="Ej: 123456789"
-      required
-    />
+  <div class="container_form__email_tel">
+    <div class="item item__email">
+      <label for="item item__email">Email <span class="span">*</span> </label>
+      <input
+        class="box"
+        type="email"
+        id="email"
+        value="nombre.apellidos@mail.com"
+        required
+      />
+    </div>
+    <div class="item">
+      <label for="tel"> Teléfono <span class="span">*</span> </label>
+      <input
+        class="box"
+        type="tel"
+        id="tel"
+        placeholder="Ej: 123456789"
+        required
+      />
+    </div>
   </div>
   <div class="item">
     <label for="message">Mensaje:</label>
     <textarea
-      class="box"
+      class="box box__area"
       id="message"
       name="message"
       rows="8"
       cols="50"
+      placeholder="Qué necesitas"
     ></textarea>
   </div>
-  <div class="item">
+  <div class="item item__button">
     <input class="buttom" type="submit" value="enviar" />
   </div>
 </form>

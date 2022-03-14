@@ -65,6 +65,10 @@
       @include tablet() {
         padding-right: 0px;
       }
+
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 

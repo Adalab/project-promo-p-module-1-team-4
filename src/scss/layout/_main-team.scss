@@ -20,30 +20,15 @@
 
 .slogan {
   text-align: center;
-  padding: 10px;
+  padding: 10px 0px;
   background-color: $background-body_color;
   transform: translateY(50%);
   flex-grow: 1;
-  margin: 0 15px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.39;
   color: $text-color-title;
-
-  /* width: 100%;
-  height: fit-content;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 14px;
-  position: relative;
-  transform: translateY(-50%);
-  background-color: $background-body_color;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.39;
-  color: $text-color-title; */
 
   @include tablet {
     opacity: 0.8;

@@ -93,7 +93,38 @@
   }
 }
 .links {
+  animation-name: bounce;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
   &:hover {
     transform: scale(1.2);
   }
+
+  //   &:nth-child(even) {
+  //     @keyframes bounce {
+  //       0% {
+  //         transform: translate(0, -2px);
+  //       }
+  //       50% {
+  //         transform: translate(0, 8px);
+  //       }
+  //       100% {
+  //         transform: translate(0, -2px);
+  //       }
+  //     }
+  //   }
+  // }
+
+  // @keyframes bounce {
+  //   0% {
+  //     transform: translate(0, -5px);
+  //   }
+  //   50% {
+  //     transform: translate(0, 10px);
+  //   }
+  //   100% {
+  //     transform: translate(0, -5px);
+  //   }
 }
